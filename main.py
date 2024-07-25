@@ -37,10 +37,7 @@ def sample_analyze_sentiment(text_content: str = "I am so happy and joyful.") ->
 
 @app.get("/get_sentiment")
 def get_sentiment():
-    contents = """
-        파라미터는 db에서 읽을 content의 key 값
-        contents는 db에서 읽어온 텍스트 데이터
-        """
+    contents = """"""
     return sample_analyze_sentiment(text_content=contents)
 
 
