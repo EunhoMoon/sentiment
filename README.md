@@ -15,3 +15,9 @@
 
 #### FastAPI
 - uvicorn main:app --reload
+
+#### TODO
+- [ ] Docker 환경 구축
+  - [ ] Docker Image 내부에 GCP 인증
+- [ ] MySQL 연동
+- [ ] 패키지 구조 변경
