@@ -1,0 +1,4 @@
+google-cloud-language
+protobuf
+fastapi
+uvicorn[standard]
