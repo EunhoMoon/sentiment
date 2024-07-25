@@ -35,9 +35,10 @@ def sample_analyze_sentiment(text_content: str = "I am so happy and joyful.") ->
     return result
 
 
-@app.get("/get_sentiment")
-def get_sentiment():
-    contents = """"""
+@app.post("/analyze")
+async def get_sentiment(contents: str):
+    if not contents:
+        return {"error": "No contents provided."}
     return sample_analyze_sentiment(text_content=contents)
 
 
