@@ -7,6 +7,7 @@ class Analyze:
         self._client = language_v2.LanguageServiceClient()
         self._document_type = language_v2.Document.Type.PLAIN_TEXT
         self._language_code = "ko"
+        self._encoding_type = language_v2.EncodingType.UTF8
 
     def analyze_sentiment_from_text(self, text_content: str) -> dict:
         try:
@@ -16,10 +17,8 @@ class Analyze:
                 "language_code": self._language_code,
             }
 
-            encoding_type = language_v2.EncodingType.UTF8
-
             response = self._client.analyze_sentiment(
-                request={"document": document, "encoding_type": encoding_type}
+                request={"document": document, "encoding_type": self._encoding_type}
             )
             response_dict = MessageToDict(response._pb)
 
