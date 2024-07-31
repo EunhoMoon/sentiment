@@ -6,9 +6,13 @@
 - Python 3.11
 - FastAPI
 - Google Cloud Natural Language API
-- MySQL(예정)
+- ~~MySQL(예정)~~
 #### [Google Cloud Console](https://cloud.google.com/?hl=ko)
-- service-account.json 발급 필요
+1. IAM 및 관리자 
+2. 서비스 계정 
+3. 서비스 계정 만들기 
+4. 역할 추가 
+5. JSON 키 만들기
 
 #### Docker
 
@@ -25,6 +29,6 @@
 #### TODO
 - [ ] Docker 환경 구축
   - [x] Docker Image 내부에 GCP 인증
-- [ ] MySQL 연동
+- [ ] ~~MySQL 연동~~
 - [ ] 패키지 구조 변경
 - [ ] jwt 토큰 인증
