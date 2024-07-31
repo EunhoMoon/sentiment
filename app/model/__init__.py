@@ -1,0 +1,1 @@
+from app.model.analyze_model import *
